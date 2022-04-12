@@ -1,5 +1,9 @@
-import { Tutorial } from './models/tutorial.model';
+import { Book } from '../models/books.model';
+import { Photo } from '../models/photo.model';
 
 export interface AppState {
-    readonly tutorial: Tutorial[];
+    photo: ReadonlyArray<Photo>;
+    count: Readonly<number>;
+    books: ReadonlyArray<Book>;
+    collection: ReadonlyArray<string>;
 }
